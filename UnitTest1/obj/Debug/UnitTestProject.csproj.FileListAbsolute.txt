@@ -1,0 +1,17 @@
+C:\Users\jrack\Desktop\Projects\My-custom-list\MyCustomList\UnitTest1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\jrack\Desktop\Projects\My-custom-list\MyCustomList\UnitTest1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\jrack\Desktop\Projects\My-custom-list\MyCustomList\UnitTest1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\jrack\Desktop\Projects\My-custom-list\MyCustomList\UnitTest1\bin\Debug\UnitTest1.dll
+C:\Users\jrack\Desktop\Projects\My-custom-list\MyCustomList\UnitTest1\bin\Debug\UnitTest1.pdb
+C:\Users\jrack\Desktop\Projects\My-custom-list\MyCustomList\UnitTest1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\jrack\Desktop\Projects\My-custom-list\MyCustomList\UnitTest1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\jrack\Desktop\Projects\My-custom-list\MyCustomList\UnitTest1\bin\Debug\MyCustomList.exe
+C:\Users\jrack\Desktop\Projects\My-custom-list\MyCustomList\UnitTest1\bin\Debug\MyCustomList.pdb
+C:\Users\jrack\Desktop\Projects\My-custom-list\MyCustomList\UnitTest1\bin\Debug\MyCustomList.exe.config
+C:\Users\jrack\Desktop\Projects\My-custom-list\MyCustomList\UnitTest1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\jrack\Desktop\Projects\My-custom-list\MyCustomList\UnitTest1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\jrack\Desktop\Projects\My-custom-list\MyCustomList\UnitTest1\obj\Debug\UnitTestProject.csprojAssemblyReference.cache
+C:\Users\jrack\Desktop\Projects\My-custom-list\MyCustomList\UnitTest1\obj\Debug\UnitTestProject.csproj.CoreCompileInputs.cache
+C:\Users\jrack\Desktop\Projects\My-custom-list\MyCustomList\UnitTest1\obj\Debug\UnitTestProject.csproj.CopyComplete
+C:\Users\jrack\Desktop\Projects\My-custom-list\MyCustomList\UnitTest1\obj\Debug\UnitTest1.dll
+C:\Users\jrack\Desktop\Projects\My-custom-list\MyCustomList\UnitTest1\obj\Debug\UnitTest1.pdb

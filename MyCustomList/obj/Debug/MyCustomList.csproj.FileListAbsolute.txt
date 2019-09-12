@@ -1,0 +1,7 @@
+C:\Users\jrack\Desktop\Projects\My-custom-list\MyCustomList\MyCustomList\obj\Debug\MyCustomList.csprojAssemblyReference.cache
+C:\Users\jrack\Desktop\Projects\My-custom-list\MyCustomList\MyCustomList\obj\Debug\MyCustomList.csproj.CoreCompileInputs.cache
+C:\Users\jrack\Desktop\Projects\My-custom-list\MyCustomList\MyCustomList\bin\Debug\MyCustomList.exe.config
+C:\Users\jrack\Desktop\Projects\My-custom-list\MyCustomList\MyCustomList\bin\Debug\MyCustomList.exe
+C:\Users\jrack\Desktop\Projects\My-custom-list\MyCustomList\MyCustomList\bin\Debug\MyCustomList.pdb
+C:\Users\jrack\Desktop\Projects\My-custom-list\MyCustomList\MyCustomList\obj\Debug\MyCustomList.exe
+C:\Users\jrack\Desktop\Projects\My-custom-list\MyCustomList\MyCustomList\obj\Debug\MyCustomList.pdb
