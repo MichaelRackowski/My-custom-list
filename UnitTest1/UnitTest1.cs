@@ -167,9 +167,10 @@ namespace UnitTestProject
             name.Add("Starr");
             name.Add("McNabb");
             name.Add("Cook");
+
             name.Remove("Farve");
             name.Remove("Starr");
-            name.Remove("Mcnabb");
+            name.Remove("McNabb");
 
             actualResult = name[4];
 
