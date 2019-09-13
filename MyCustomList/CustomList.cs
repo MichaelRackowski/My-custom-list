@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MyCustomList
 {
-    public class CustomList<T>
+    public class CustomList<T>: IEnumerable
     {
 
         private T[] array;
@@ -71,7 +72,24 @@ namespace MyCustomList
             }           
 
         }
-      
+        public override string ToString()
+        {
+            string str = "";
+            for (int i = 0; i < Count; i++)
+            {
+                if (i.Equals(Count - 1))
+                {
+                    str += array[i].ToString();
+                    
+                }
+                else
+                {
+                    str += array[i].ToString() + ", ";
+                }
+            }
+            return str;           
+        }
+
         public void CapacityCounter()
         {
             if (Count == Capacity)
@@ -93,6 +111,30 @@ namespace MyCustomList
             }
             return check;
         }
+
+        public IEnumerator GetEnumerator()
+        {
+            for (int i = 0; i < Count ; i++)
+            {
+                yield return array[i];
+            }
+            
+        }
+
+        public static CustomList<T> operator +(CustomList<T> One, CustomList<T> Two)
+        {
+            CustomList<T> CombinedList = new CustomList<T>();
+            for (int i = 0; i < One.Count; i++)
+            {
+                CombinedList.Add(One[i]);
+            }
+            for (int i = 0; i < Two.Count; i++)
+            {
+                CombinedList.Add(Two[i]);
+            }
+            return CombinedList;
+        }
+       
 
        
     }

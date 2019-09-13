@@ -5,7 +5,7 @@ using MyCustomList;
 namespace UnitTestProject
 {
     [TestClass]
-    public class UnitTest1
+    public class AddnRemoveTest
     {
         [TestMethod]
         public void Add_2_CountIncrease()
