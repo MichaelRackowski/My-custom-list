@@ -120,7 +120,6 @@ namespace MyCustomList
             }
             
         }
-
         public static CustomList<T> operator +(CustomList<T> One, CustomList<T> Two)
         {
             CustomList<T> CombinedList = new CustomList<T>();
@@ -134,16 +133,64 @@ namespace MyCustomList
             }
             return CombinedList;
         }
-       
+        public static CustomList<T> operator -(CustomList<T> one, CustomList<T> two)
+        {
+            CustomList<T> CombinedList =  one + new CustomList<T>();
+            //int counter = One.Count;
+            //for (int j = 0; j < counter;j++)
+            
+                for (int i = 0; i < two.Count; i++)
+                {
+                    CombinedList.Remove(two[i]);
+                   
+                }
+            
+               return CombinedList;
+        }
+        public CustomList<T> Zipper(CustomList<T> zipList)
+        {
+            CustomList<T> tempList = new CustomList<T>();
+            if (Count > 0 && zipList.Count > 0)
+            {
+                CustomList<T> biggerList = CompareLists(this, zipList);
+                int openIndex = 0;
+                for (int i = 0; i < Count && i < zipList.Count; i++)
+                {
+                    tempList.Add(array[i]);
+                    tempList.Add(zipList[i]);
+                    openIndex = i;
+                }
+                for (int i = openIndex + 1; i < biggerList.Count; i++)
+                {
+                    tempList.Add(biggerList[i]);
+                }
+            }
+            else if (Count > 0 && zipList.Count == 0)
+            {
+                tempList = this;
+            }
+            else if (Count == 0 && zipList.Count > 0)
+            {
+                tempList = zipList;
+            }
+            return tempList;
+        }
 
-       
+
+
+        private CustomList<T> CompareLists(CustomList<T>One, CustomList<T>Two)
+        {
+            CustomList<T> Result = new CustomList<T>();
+            if(One.Count < Two.Count)
+            {
+                Result = Two;
+            }
+            else 
+            {
+                Result = One;
+            }
+            return Result;
+        }
     }
-
-
-
-
-
-
-
 }
     

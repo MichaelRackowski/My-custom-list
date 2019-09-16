@@ -1,0 +1,20 @@
+In this method you have 2 generic custom lists that subract for each other. 
+They subract one isntance of the cutsom list from antoher instance of a custom list.
+
+
+ [TestMethod]
+        public void Op_TwoIntLists_Compared()
+        {
+            CustomList<int> num = new CustomList<int>() { 7, 8, 9 };
+            CustomList<int> numb = new CustomList<int>() { 7, 5, 6 };
+            CustomList<int> expectedResult = new CustomList<int>() { 8, 9 };
+            CustomList<int> actualReuslt;
+
+            actualReuslt = num - numb;
+
+            Assert.AreEqual(expectedResult.ToString(), actualReuslt.ToString());
+        }
+Here is an example the answer would be (8,9) and I'll expain why,
+You compare the first list to the second, if they have the same number you get rid of that number.
+You use the first list so if list Two doesn't have a number thats in the first list you get rid of that number.
+You always return list One.
