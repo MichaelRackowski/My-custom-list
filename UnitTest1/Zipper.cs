@@ -45,7 +45,6 @@ namespace UnitTest1
             CustomList<string> expectedResult = new CustomList<string>() { "Mark","Bob","Max","Bill","Mike","Brooke" };
             CustomList<string> actualReuslt;
 
-
             actualReuslt = num.Zipper(numb);
 
             Assert.AreEqual(expectedResult.ToString(), actualReuslt.ToString());

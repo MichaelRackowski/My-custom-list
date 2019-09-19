@@ -7,30 +7,62 @@ using System.Threading.Tasks;
 
 namespace MyCustomList
 {
-    public class CustomList<T>: IEnumerable
+    public class CustomList<T> : IEnumerable
     {
-
         private T[] array;
+        
         public int Capacity { get; private set; }
         public int Count { get; private set; }
+
         public T this[int i]
         {
-            get => array[i];
-            set => array[i] = value;
+            get
+            {
+                if(i >= Count) 
+                {
+                    throw new ArgumentOutOfRangeException();
+                }
+                else
+                {
+                    return array[i];
+                }
+            }
+            set
+            {
+                if(i >= Count)
+                {
+                    throw new ArgumentOutOfRangeException();
+                }
+                else { 
+                array[i] = value;
+                }
+            }
         }
+
+
+        //public T this[int i]
+        //{
+        //    //o fix this, you would need an if statement in the property that essentially factors in the Count. The else would throw an ArgumentOutOfRangeException.
+           
+        //    if(CustomList.count<int i)
+        //    {
+        //    get => array[i];
+        //    set => array[i] = value;
+        //    }
+        //    else
+        //    {
+        //    throw ArgumentOutOfRangeException;
+        //    }
+        //}
         public CustomList()
         {
             Capacity = 4;
             Count = 0;
             array = new T[Capacity];
         }
-
-
-
        public void Add(T item)
         {
-            CapacityCounter();                // made
-
+            CapacityCounter();                
             T[]tempArray = new T[Capacity];
             for (int i = 0; i <= Count;i++)
             {
@@ -77,6 +109,7 @@ namespace MyCustomList
             string str = "";
             for (int i = 0; i < Count; i++)
             {
+                
                 if (i.Equals(Count - 1))
                 {
                     str += array[i].ToString();
@@ -136,16 +169,13 @@ namespace MyCustomList
         public static CustomList<T> operator -(CustomList<T> one, CustomList<T> two)
         {
             CustomList<T> CombinedList =  one + new CustomList<T>();
-            //int counter = One.Count;
-            //for (int j = 0; j < counter;j++)
             
                 for (int i = 0; i < two.Count; i++)
                 {
-                    CombinedList.Remove(two[i]);
-                   
+                    CombinedList.Remove(two[i]);                   
                 }
-            
-               return CombinedList;
+
+            return CombinedList;
         }
         public CustomList<T> Zipper(CustomList<T> zipList)
         {
